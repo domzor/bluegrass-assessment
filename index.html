@@ -5,8 +5,320 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rugby Basics | Rugby Masters</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@600&family=Work+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./assets/js/app.js"></script>
 </head>
 <body>
-    <h1>Hello world</h1>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__start">
+                <a href="#">
+                    <picture>
+                        <source srcset="./assets/media/header_rugby_master_logo.svg" type="image/svg+xml">
+                        <img class="logo" src="./assets/media/header_rugby_master_logo.png" alt="Rugby Masters">
+                    </picture>
+                </a>
+                <a href="#" class="nav__item">Browse Classes</a>
+            </div>
+            <div class="nav__end">
+                <a href="#" class="nav__item nav__item--small nav__item--search">Search</a>
+                <a href="#" class="nav__item nav__item--small nav__item--cart">Cart</a>
+                <a href="#" class="nav__item nav__item--small nav__item">Log In</a>
+                <a href="#" class="btn btn-primary" role="button">Sign Up</a>
+            </div>
+            <div class="nav__mobile">
+                <picture>
+                    <source srcset="./assets/media/mobile_header_logo.svg" type="image/svg+xml">
+                    <img class="logo" src="./assets/media/mobile_header_logo.png" alt="Rugby Masters">
+                </picture>
+                <a href="#" class="nav__item nav__item--search">Search</a>
+                <a href="#" class="nav__menu-icon"></a>
+            </div>
+        </nav>
+    </header>
+    <div class="mobile-menu">
+        <header class="header">
+            <nav class="nav">
+                <div class="nav__mobile">
+                    <picture>
+                        <source srcset="./assets/media/mobile_nav_logo.svg" type="image/svg+xml">
+                        <img class="logo" src="./assets/media/mobile_nav_logo.png" alt="Rugby Masters">
+                    </picture>
+                    <a href="#" class="nav__menu-icon nav__menu-icon--close"></a>
+                </div>
+            </nav>
+        </header>
+        <nav class="mobile-menu__nav">
+            <ul>
+                <li><a href="#">Browse Classes</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Log In</a></li>
+            </ul>
+            <a href="#" class="btn btn-primary btn-mobile" role="button">Get Started</a>
+        </nav>
+    </div>
+    <main class="main">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="#">
+                        <picture>
+                            <source srcset="./assets/media/class_details_home_rugby_masters_logo.svg" type="image/svg+xml">
+                            <img class="logo" src="./assets/media/class_details_home_rugby_masters_logo.png" alt="Home">
+                        </picture>
+                    </a>
+                </li>
+                <li class="breadcrumb-item"><a href="#">Browse Classes</a></li>
+                <li class="breadcrumb-item"><a href="#">Basic Skills</a></li>
+                <li class="breadcrumb-item">Rugby Basics</li>
+            </ol>
+        </nav>
+        <section class="class">
+            <div class="class__summary class__summary--desktop">
+                <div class="class__left">
+                    <img class="class__image" src="./assets/media/class_overview_circle_image.png" alt="Rugby player holding rugby ball">
+                    <div class="class__details">
+                        <h2 class="class__title">Rugby Basics</h2>
+                        <p class="class__coach">Taught by Cobus Reinach</p>
+                        <p class="class__length">6 lessons - 3 hours, 27 minutes</p>
+                        <div class="class__snapshots">
+                            <div class="tag">2 Snapshots Available</div>
+                            <a class="btn__icon btn__icon--info" href="#" role="button"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="class__right">
+                    <div class="class__sell">
+                        <p class="class__price">R1550.00</p>
+                        <a href="#" class="btn btn-primary" role="button">Add to Cart</a>
+                    </div>
+                    <div class="class__buttons">
+                        <a href="#" class="btn btn-outline" role="button">Basic Skills</a>
+                        <a href="#" class="btn btn-outline" role="button">Coaching</a>
+                        <a href="#" class="btn btn-outline" role="button">Techniques</a>
+                    </div>
+                </div>
+            </div>
+            <div class="class__summary class__summary--mobile">
+                <div class="class__mobile-top">
+                    <img class="class__image" src="./assets/media/class_overview_circle_image.png" alt="Rugby player holding rugby ball">
+                    <div class="class__mobile-sell">
+                        <p class="class__price">R1550.00</p>
+                        <a href="#" class="btn btn-primary btn-mobile" role="button">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="class__details">
+                    <h2 class="class__title">Rugby Basics</h2>
+                    <p class="class__coach">Taught by Cobus Reinach</p>
+                    <p class="class__length">6 lessons - 3 hours, 27 minutes</p>
+                    <div class="class__snapshots">
+                        <div class="tag">2 Snapshots Available</div>
+                        <a class="btn__icon btn__icon--info" href="#" role="button"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="class__content">
+                <div class="class__video">
+                    <a href="#" class="class__video-placeholder">
+                        <img src="./assets/media/class_overview_video.jpg" alt="">
+                    </a>
+                    <p class="class__video-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat in elit eget malesuada. Aenean laoreet sem vel sollicitudin dolor sit amet, consectetur adipiscing elit. Quisque condimentum dui eget lacinia pellentesque. Nulla rhoncus at est ac sollicitudin. Sed quis egestas sapien. Nam dignissim posuere rutrum. Nunc suscipit posuere felis eu maximus. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+                    </p>
+                </div>
+                <div class="class__lessons">
+                    <div class="accordion accordion-flush" id="accordionLessons">
+                        <div class="accordion-item">
+                            <h5 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    1. Introduction
+                                </button>
+                            </h5>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionLessons">
+                                <div class="accordion-body">
+                                  <p>Nam dignissim posuere rutrum. Nunc suscipit posuere felis eu maximus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h5 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                    2. On-Field Decision Making
+                                </button>
+                            </h5>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionLessons">
+                                <div class="accordion-body">
+                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quia? Similique debitis vitae, explicabo ea voluptates accusantium quidem assumenda harum modi, beatae consequatur cupiditate, eveniet nobis aperiam nesciunt porro veritatis.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h5 class="accordion-header">
+                                <button class="accordion-button accordion-button--tag" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                    3. Passing
+                                </button>
+                                <div class="tag tag--blue">Available as Snapshot</div>
+                            </h5>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionLessons">
+                                <div class="accordion-body">
+                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quia? Similique debitis vitae, explicabo ea voluptates accusantium quidem assumenda harum modi, beatae consequatur cupiditate, eveniet nobis aperiam nesciunt porro veritatis.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h5 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                    4. Kicking
+                                </button>
+                            </h5>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionLessons">
+                                <div class="accordion-body">
+                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quia? Similique debitis vitae, explicabo ea voluptates accusantium quidem assumenda harum modi, beatae consequatur cupiditate, eveniet nobis aperiam nesciunt porro veritatis.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h5 class="accordion-header">
+                                <button class="accordion-button accordion-button--tag" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                    5. Game Prep and Analysation
+                                </button>
+                                <div class="tag tag--blue">Available as Snapshot</div>
+                            </h5>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionLessons">
+                                <div class="accordion-body">
+                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quia? Similique debitis vitae, explicabo ea voluptates accusantium quidem assumenda harum modi, beatae consequatur cupiditate, eveniet nobis aperiam nesciunt porro veritatis.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h5 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                                    6. Tricks
+                                </button>
+                            </h5>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionLessons">
+                                <div class="accordion-body">
+                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quia? Similique debitis vitae, explicabo ea voluptates accusantium quidem assumenda harum modi, beatae consequatur cupiditate, eveniet nobis aperiam nesciunt porro veritatis.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="coach">
+                <div class="coach__profile">
+                    <img class="coach__photo" src="./assets/media/cobus_coach_image.png" alt="Photo of Cobus Reinach">
+                    <div class="coach__info">
+                        <h3 class="coach__name">Cobus Reinach</h3>
+                        <p class="coach__title">Professional Rugby Union Player</p>
+                    </div>
+                </div>
+                <p class="coach__description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat in elit eget malesuada. Aenean laoreet sem vel sollicitudin dolor sit amet, consectetur adipiscing elit. Quisque condimentum dui eget lacinia pellentesque. Nulla rhoncus at est ac sollicitudin. Sed quis egestas sapien. Nam dignissim.
+                </p>
+            </div>
+        </section>
+        <section class="cta">
+            <div class="cta__container">
+                <div class="cta__inner">
+                    <div class="cta__copy">
+                        <h1 class="cta__title">Ready to Go?</h1>
+                        <p class="cta__subtitle">Purchase this class in just a few clicks!</p>
+                    </div>
+                    <div class="cta__button">
+                        <a class="btn btn-primary btn-lg" role="button">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="snapshots" id="snapshots">
+            <h2 class="snapshots__title">Snapshots</h2>
+            <p class="snapshots__description">Purchase individual lessons from this Master Class</p>
+            <div class="snapshots__swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide snapshot">
+                        <div class="snapshot__top">
+                            <img class="snapshot__image" src="./assets/media/snapshot_image.jpg" alt="Photo of rugby players">
+                            <div class="snapshot__length">35:02</div>
+                        </div>
+                        <div class="snapshot__content">
+                            <h5 class="snapshot__title"><span class="snapshot__underline">Tackling and Game Tactics Lorem ipsum dolor Game Tactics Lorem ipsum dolor</span> with Cobus Reinach</h5>
+                            <p class="snapshot__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat in elit eget malesuada. Aenean laoreet sem vel sollicitudin…</p>
+                            <div class="snapshot__bottom">
+                                <p class="snapshot__price">R450.00</p>
+                                <a class="btn__icon btn__icon--cart" href="#" role="button"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide snapshot">
+                        <div class="snapshot__top">
+                            <img class="snapshot__image" src="./assets/media/snapshot_image.jpg" alt="Photo of rugby players">
+                            <div class="snapshot__length">35:02</div>
+                        </div>
+                        <div class="snapshot__content">
+                            <h5 class="snapshot__title"><span class="snapshot__underline">Tackling and Game Tactics Lorem ipsum dolor Game Tactics Lorem ipsum dolor</span> with Cobus Reinach</h5>
+                            <p class="snapshot__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat in elit eget malesuada. Aenean laoreet sem vel sollicitudin…</p>
+                            <div class="snapshot__bottom">
+                                <p class="snapshot__price">R450.00</p>
+                                <a class="btn__icon btn__icon--cart" href="#" role="button"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                const swiper = new Swiper('.snapshots__swiper', {
+                    slidesPerView: 1.2,
+                    spaceBetween: 20,
+                    breakpoints: {
+                        769: {
+                            slidesPerView: 3.1
+                        }
+                    },
+                    freeMode: true
+                });
+            </script>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__main">
+                <a href="#">
+                    <picture>
+                        <source srcset="./assets/media/mobile_footer_logo.svg" media="(max-width: 768px)" type="image/svg+xml">
+                        <source srcset="./assets/media/footer_rugby_masters_logo.png" media="(min-width: 769px)">
+                        <source srcset="./assets/media/footer_rugby_masters_logo.svg" media="(min-width: 769px)" type="image/svg+xml">
+                        <img class="footer__logo" src="./assets/media/mobile_footer_logo.png" alt="Rugby Masters">
+                    </picture>
+                </a>
+                <ul class="footer__links">
+                    <li class="footer__item"><a class="footer__link" href="#">Home</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Browse Classes</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Create an Account</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Terms & Conditions</a></li>
+                </ul>
+                <div class="footer__contact">
+                    <h4 class="footer__title">Get in touch</h4>
+                    <div class="footer__social">
+                        <a class="btn__icon btn__icon--facebook" href="#" role="button"></a>
+                        <a class="btn__icon btn__icon--instagram" href="#" role="button"></a>
+                        <a class="btn__icon btn__icon--twitter" href="#" role="button"></a>
+                    </div>
+                    <a class="footer__link" href="mailto:hello@rugbymasters.co.za">hello@rugbymasters.co.za</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p class="footer__copyright">Copyright Rugby Masters 2020, All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,0 +1,15 @@
+html, body {
+    background: $c-blue-gradient;
+    color: $c-white;
+}
+
+.main {
+    display: block;
+    margin: 0 auto;
+    padding: 40px 20px;
+    max-width: $bp-xlarge;
+
+    @media (min-width: $bp-medium) {
+        padding: 70px;
+    }
+}

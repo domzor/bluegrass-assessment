@@ -1,0 +1,32 @@
+.breadcrumb {
+    display: none;
+    margin: 0 0 20px;
+    padding: 0;
+
+    @media (min-width: $bp-medium) {
+        display: flex;
+        align-items: center;
+    }
+
+    .breadcrumb-item {
+        letter-spacing: 0.72px;
+
+        &:before {
+            color: $c-white;
+        }
+
+        a {
+            font-weight: 300;
+            color: $c-white;
+
+            &:hover {
+                color: $c-orange;
+            }
+        }
+
+        .logo {
+            width: 27px;
+            height: 27px;
+        }
+    }
+}

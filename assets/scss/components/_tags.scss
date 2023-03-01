@@ -1,0 +1,16 @@
+.tag {
+    display: inline-block;
+    margin: 0;
+    padding: 5px 15px;
+    background-color: $c-white;
+    color: $c-blue;
+    font-size: 14px;
+    line-height: 16px;
+    height: 26px;
+    border-radius: 13px;
+
+    &--blue {
+        background-color: $c-blue;
+        color: $c-white;
+    }
+}

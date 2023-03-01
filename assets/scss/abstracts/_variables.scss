@@ -1,0 +1,20 @@
+//Colours
+
+$c-blue: #141630;
+$c-blue-gradient: linear-gradient(90deg, #141630 0%, #1F2350 100%);
+$c-orange: #EF7D3F;
+$c-orange-gradient: linear-gradient(0deg, #E15B11 0%, #EB9845 54%, #EF7D3F 100%);
+$c-white: #FFFFFF;
+$c-offwhite: #FDFDFD;
+$c-grey: rgba(255,255,255,0.15);
+
+//Typography
+
+$f-header: 'Hanken Grotesk', sans-serif;
+$f-text: 'Work Sans', sans-serif;
+
+// Breakpoints
+
+$bp-medium: 769px;
+$bp-large: 1024px;
+$bp-xlarge: 1192px;
